@@ -1,0 +1,5 @@
+{
+  "name": "QuickCover USA",
+  "description": "A modern, responsive car insurance comparison platform featuring a functional quote form and an AI-powered insurance assistant using the Gemini API.",
+  "requestFramePermissions": []
+}
