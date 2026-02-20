@@ -1,5 +1,6 @@
 import React from 'react';
 import { Shield, Facebook, Twitter, Phone, Mail, MapPin, ArrowRight, Instagram, Linkedin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Reveal from './Reveal';
 
 const Footer: React.FC = () => {
@@ -45,19 +46,19 @@ const Footer: React.FC = () => {
                         <div>
                             <h5 className="text-sm font-bold text-brand-900 mb-5 uppercase tracking-wider">Quick Links</h5>
                             <ul className="space-y-3 text-sm text-slate-500">
-                                <li><a href="#" className="hover:text-primary-600 transition-colors">Home</a></li>
-                                <li><a href="#" className="hover:text-primary-600 transition-colors">Supported Insurers</a></li>
-                                <li><a href="#" className="hover:text-primary-600 transition-colors">Call Us: 1-800-555-0199</a></li>
+                                <li><Link to="/" className="hover:text-primary-600 transition-colors">Home</Link></li>
+                                <li><Link to="/#how-it-works" className="hover:text-primary-600 transition-colors">How it Works</Link></li>
+                                <li><a href="tel:18005550199" className="hover:text-primary-600 transition-colors">Call Us: 1-800-555-0199</a></li>
                             </ul>
                         </div>
 
                         <div>
                             <h5 className="text-sm font-bold text-brand-900 mb-5 uppercase tracking-wider">Legal Information</h5>
                             <ul className="space-y-3 text-sm text-slate-500">
-                                <li><a href="#" className="hover:text-primary-600 transition-colors">Privacy Policy</a></li>
-                                <li><a href="#" className="hover:text-primary-600 transition-colors">Cookie Policy</a></li>
-                                <li><a href="#" className="hover:text-primary-600 transition-colors">Terms & Conditions</a></li>
-                                <li><a href="#" className="hover:text-primary-600 transition-colors">Complaints Procedure</a></li>
+                                <li><Link to="/privacy-policy" className="hover:text-primary-600 transition-colors">Privacy Policy</Link></li>
+                                <li><Link to="/cookie-policy" className="hover:text-primary-600 transition-colors">Cookie Policy</Link></li>
+                                <li><Link to="/terms" className="hover:text-primary-600 transition-colors">Terms & Conditions</Link></li>
+                                <li><Link to="/complaints-procedure" className="hover:text-primary-600 transition-colors">Complaints Procedure</Link></li>
                             </ul>
                         </div>
 

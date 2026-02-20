@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ShieldCheck, CheckCircle2, Users, ArrowRight, Loader2, Lock } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Reveal from './Reveal';
 import { QuoteFormData } from '../types';
 
@@ -272,7 +273,7 @@ const Hero: React.FC = () => {
                                                 </div>
                                             </label>
                                             <p className="text-[10px] text-slate-500 leading-relaxed">
-                                                By clicking "Request Assistance", I authorize Allstate insurance and its <a href="#" className="underline decoration-slate-300 hover:text-primary-600">partners</a> to contact me via automated technology. I agree to the <a href="#" className="underline decoration-slate-300 hover:text-primary-600">Privacy Policy</a>.
+                                                By clicking "Request Assistance", I authorize Allstate insurance and its <Link to="/privacy-policy" className="underline decoration-slate-300 hover:text-primary-600">partners</Link> to contact me via automated technology. I agree to the <Link to="/privacy-policy" className="underline decoration-slate-300 hover:text-primary-600">Privacy Policy</Link>.
                                             </p>
                                         </div>
 
