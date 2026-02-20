@@ -6,7 +6,7 @@ import { ChatMessage } from '../types';
 const InsuranceChat: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([
-    { role: 'model', text: "Hello! I'm QuickBot. I can help you understand insurance terms, find discounts, or explain how our quote process works. How can I help today?" }
+    { role: 'model', text: "Hello! I'm the Allstate Assistant. I can help you understand insurance claims, find support on what to do after an accident, or explain how our guidance process works. How can I help today?" }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -30,8 +30,8 @@ const InsuranceChat: React.FC = () => {
     setIsLoading(true);
 
     const history = messages.map(m => ({
-        role: m.role,
-        parts: [{ text: m.text }]
+      role: m.role,
+      parts: [{ text: m.text }]
     }));
 
     const response = await sendMessageToGemini(userMessage, history);
@@ -51,7 +51,7 @@ const InsuranceChat: React.FC = () => {
         >
           <MessageSquare size={26} fill="currentColor" />
           <span className="absolute right-full mr-4 bg-white text-brand-900 text-xs font-bold px-3 py-1.5 rounded-lg shadow-xl opacity-0 group-hover:opacity-100 transition-all transform translate-x-2 group-hover:translate-x-0 whitespace-nowrap border border-slate-100">
-             Chat with AI
+            Chat with AI
           </span>
           <span className="absolute top-0 right-0 w-3 h-3 bg-action-500 rounded-full border-2 border-brand-900"></span>
         </button>
@@ -69,17 +69,17 @@ const InsuranceChat: React.FC = () => {
               </div>
               <div>
                 <h3 className="text-sm font-bold flex items-center gap-1">
-                    QuickBot AI
-                    <Sparkles size={10} className="text-action-400" />
+                  Allstate Assistant
+                  <Sparkles size={10} className="text-action-400" />
                 </h3>
                 <p className="text-[10px] text-slate-300 font-medium flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-action-500"></span> Online
+                  <span className="w-1.5 h-1.5 rounded-full bg-action-500"></span> Online
                 </p>
               </div>
             </div>
-            <button 
-                onClick={() => setIsOpen(false)}
-                className="relative z-10 hover:bg-white/10 p-2 rounded-full transition-colors text-slate-300 hover:text-white"
+            <button
+              onClick={() => setIsOpen(false)}
+              className="relative z-10 hover:bg-white/10 p-2 rounded-full transition-colors text-slate-300 hover:text-white"
             >
               <Minimize2 size={18} />
             </button>
@@ -98,11 +98,10 @@ const InsuranceChat: React.FC = () => {
                   </div>
                 )}
                 <div
-                  className={`max-w-[80%] p-3.5 rounded-2xl text-sm leading-relaxed shadow-sm ${
-                    msg.role === 'user'
+                  className={`max-w-[80%] p-3.5 rounded-2xl text-sm leading-relaxed shadow-sm ${msg.role === 'user'
                       ? 'bg-primary-600 text-white rounded-br-none'
                       : 'bg-white text-slate-700 border border-slate-100 rounded-bl-none'
-                  }`}
+                    }`}
                 >
                   {msg.text}
                 </div>
@@ -110,14 +109,14 @@ const InsuranceChat: React.FC = () => {
             ))}
             {isLoading && (
               <div className="flex gap-3 justify-start animate-pulse">
-                 <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center shrink-0 shadow-sm mt-1">
-                    <Bot size={16} className="text-primary-600" />
-                  </div>
-                  <div className="bg-white p-4 rounded-2xl rounded-bl-none shadow-sm border border-slate-100 flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 bg-primary-400 rounded-full animate-bounce"></span>
-                    <span className="w-1.5 h-1.5 bg-primary-400 rounded-full animate-bounce delay-100"></span>
-                    <span className="w-1.5 h-1.5 bg-primary-400 rounded-full animate-bounce delay-200"></span>
-                  </div>
+                <div className="w-8 h-8 rounded-full bg-white border border-slate-100 flex items-center justify-center shrink-0 shadow-sm mt-1">
+                  <Bot size={16} className="text-primary-600" />
+                </div>
+                <div className="bg-white p-4 rounded-2xl rounded-bl-none shadow-sm border border-slate-100 flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 bg-primary-400 rounded-full animate-bounce"></span>
+                  <span className="w-1.5 h-1.5 bg-primary-400 rounded-full animate-bounce delay-100"></span>
+                  <span className="w-1.5 h-1.5 bg-primary-400 rounded-full animate-bounce delay-200"></span>
+                </div>
               </div>
             )}
             <div ref={messagesEndRef} />
@@ -142,7 +141,7 @@ const InsuranceChat: React.FC = () => {
               </button>
             </div>
             <p className="text-[10px] text-center text-slate-400 mt-2.5">
-                AI assistance may vary. Verify with agent.
+              AI assistance may vary. Verify with agent.
             </p>
           </form>
         </div>

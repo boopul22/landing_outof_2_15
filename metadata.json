@@ -1,5 +1,6 @@
 {
-  "name": "QuickCover USA",
-  "description": "A modern, responsive car insurance comparison platform featuring a functional quote form and an AI-powered insurance assistant using the Gemini API.",
+  "name": "Allstate Insurance Claims Support",
+  "short_name": "Allstate Claims",
+  "description": "Expert guidance for USA road accident claims. Professional support when you need it most.",
   "requestFramePermissions": []
 }

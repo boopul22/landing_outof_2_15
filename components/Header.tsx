@@ -23,7 +23,7 @@ const Header: React.FC = () => {
               <Shield size={20} strokeWidth={2.5} />
             </div>
             <span className={`font-display text-xl font-bold tracking-tight transition-colors ${isScrolled ? 'text-brand-900' : 'text-white'}`}>
-              QuickCover<span className={isScrolled ? 'text-primary-600' : 'text-primary-300'}>USA</span>
+              Allstate <span className={isScrolled ? 'text-primary-600' : 'text-primary-300'}>insurance</span>
             </span>
           </div>
 
