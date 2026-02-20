@@ -7,10 +7,12 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import CookiePolicy from './pages/CookiePolicy';
 import ComplaintsProcedure from './pages/ComplaintsProcedure';
+import AccidentPopup from './components/AccidentPopup';
 
 const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
+      <AccidentPopup />
       <Header />
       <main>
         <Routes>
