@@ -39,16 +39,19 @@ const Header: React.FC = () => {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
             <nav className="flex gap-6">
-              <Link to="/#how-it-works" className="text-sm font-medium transition-colors hover:text-primary-500 text-slate-600">How it Works</Link>
-              <Link to="/#testimonials" className="text-sm font-medium transition-colors hover:text-primary-500 text-slate-600">Reviews</Link>
+              <Link to="/#how-it-works" className="text-sm font-medium transition-colors hover:text-primary-500 text-slate-600">Claims Process</Link>
+              <Link to="/#testimonials" className="text-sm font-medium transition-colors hover:text-primary-500 text-slate-600">Success Stories</Link>
             </nav>
             <div className="flex items-center gap-4">
-              <a href="tel:18005550199" className="flex items-center gap-2 font-medium text-sm transition-colors text-brand-900 hover:text-primary-600">
-                <Phone size={18} />
-                1-800-555-0199
-              </a>
+              <div className="text-right hidden lg:block">
+                <p className="text-[10px] text-slate-400 font-medium leading-none mb-0.5">Live Support — Available 24/7</p>
+                <a href="tel:18005550199" className="flex items-center gap-2 font-semibold text-sm transition-colors text-brand-900 hover:text-primary-600">
+                  <Phone size={16} />
+                  1-800-555-0199
+                </a>
+              </div>
               <Link to="/" onClick={() => isHome && window.scrollTo({ top: 0, behavior: 'smooth' })} className="bg-action-600 hover:bg-action-700 text-white text-sm font-semibold py-2.5 px-6 rounded-lg shadow-lg shadow-action-600/20 transition-all transform hover:-translate-y-0.5 active:scale-95">
-                Get My Quote
+                Get Free Help
               </Link>
             </div>
           </div>
@@ -66,14 +69,14 @@ const Header: React.FC = () => {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-white border-b border-slate-100 absolute top-full left-0 w-full p-4 shadow-xl flex flex-col gap-4">
-          <Link to="/#how-it-works" onClick={() => setMobileMenuOpen(false)} className="text-slate-600 font-medium py-2">How it Works</Link>
-          <Link to="/#testimonials" onClick={() => setMobileMenuOpen(false)} className="text-slate-600 font-medium py-2">Reviews</Link>
+          <Link to="/#how-it-works" onClick={() => setMobileMenuOpen(false)} className="text-slate-600 font-medium py-2">Claims Process</Link>
+          <Link to="/#testimonials" onClick={() => setMobileMenuOpen(false)} className="text-slate-600 font-medium py-2">Success Stories</Link>
           <hr className="border-slate-100" />
           <a href="tel:18005550199" className="flex items-center gap-2 text-brand-900 font-medium py-2">
             <Phone size={18} /> 1-800-555-0199
           </a>
           <Link to="/" onClick={() => { setMobileMenuOpen(false); if (isHome) window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="bg-action-600 text-white text-center font-medium py-3 rounded-lg">
-            Get My Quote
+            Get Free Help
           </Link>
         </div>
       )}

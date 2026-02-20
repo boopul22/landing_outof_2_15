@@ -13,10 +13,10 @@ const Footer: React.FC = () => {
 
                 <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
                     <Reveal>
-                        <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6 tracking-tight">Get the support you deserve.</h2>
+                        <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6 tracking-tight">Need immediate accident assistance?</h2>
                         <p className="text-slate-300 text-lg mb-10 font-light max-w-2xl mx-auto">Our specialists are ready to guide you through your Allstate claim process.</p>
                         <a href="tel:18005550199" className="inline-flex items-center justify-center gap-3 bg-action-600 hover:bg-action-500 text-white text-lg font-bold py-4 px-10 rounded-xl shadow-xl shadow-action-600/20 transition-all hover:-translate-y-1">
-                            Call For Assistance
+                            Call 1-800-555-0199
                             <Phone size={20} />
                         </a>
                     </Reveal>
@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
                             <ul className="space-y-4 text-sm text-slate-500">
                                 <li className="flex items-center gap-3"><Phone size={16} className="text-primary-600" /> <span className="text-brand-900 font-medium">1-800-555-0199</span></li>
                                 <li className="flex items-center gap-3"><Mail size={16} className="text-primary-600" /> support@allstate-claims.com</li>
-                                <li className="flex items-center gap-3"><MapPin size={16} className="text-primary-600" /> 123 Insurance Street, New York, NY</li>
+                                <li className="flex items-center gap-3"><MapPin size={16} className="text-primary-600" /> 450 Lexington Ave, Suite 2100, New York, NY 10017</li>
                             </ul>
                         </div>
                     </div>
@@ -76,12 +76,12 @@ const Footer: React.FC = () => {
                     <div className="border-t border-slate-100 pt-10">
                         <div className="text-center text-[10px] text-slate-400 leading-relaxed mb-8">
                             <p className="mb-3 uppercase tracking-wider font-semibold text-slate-500">REGULATORY DISCLOSURE</p>
-                            <p className="max-w-4xl mx-auto">This site operates within the advertising and lead-generation sector. We introduce customers to authorized USA accident-management providers who deliver repair and replacement services following non-fault accidents. We do not provide insurance, legal, or claims-management services directly. We are independent of all insurers and accident-management companies. You are under no obligation to use our partners.</p>
+                            <p className="max-w-4xl mx-auto">This website operates within the advertising and lead-generation sector. We connect consumers with licensed, authorized accident-management providers across the United States who deliver vehicle repair, replacement, and recovery services following non-fault collisions. We do not directly provide insurance, legal representation, or claims-adjustment services. We operate independently of all insurance carriers and accident-management firms. You are under no obligation to use any of our partner providers.</p>
                         </div>
 
                         <div className="flex flex-col items-center justify-center text-xs text-slate-400 font-medium">
                             <p>© 2026 Accident Guide. All rights reserved.</p>
-                            <p className="mt-1">Professional accident management services across the United States.</p>
+                            <p className="mt-1">Professional accident management guidance across all 50 states.</p>
                         </div>
                     </div>
                 </div>

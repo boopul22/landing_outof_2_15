@@ -6,29 +6,29 @@ import { TestimonialData } from '../types';
 const testimonials: TestimonialData[] = [
   {
     id: 1,
-    text: "I was overwhelmed after my accident, but the support team guided me through every step of my claim. They even arranged a replacement vehicle within hours.",
-    author: "Michael Stevens",
-    location: "Austin, TX",
+    text: "After getting rear-ended on the highway, I was shaken and had no idea what to do next. The Accident Guide team walked me through every detail — they even set up a rental car for me that same afternoon.",
+    author: "Carlos Ramirez",
+    location: "Phoenix, AZ",
     rating: 5,
-    initials: "MS",
+    initials: "CR",
     color: "bg-brand-900 text-white"
   },
   {
     id: 2,
-    text: "Having independent advice made dealing with the insurance company so much easier. They coordinated my repairs perfectly.",
-    author: "Jennifer Lopez",
-    location: "Columbus, OH",
+    text: "I almost accepted a lowball settlement from the other driver's insurance company. Thankfully, the advisor I spoke with helped me understand my rights and I ended up recovering three times the original offer.",
+    author: "Angela Foster",
+    location: "Charlotte, NC",
     rating: 5,
-    initials: "JL",
+    initials: "AF",
     color: "bg-primary-600 text-white"
   },
   {
     id: 3,
-    text: "When my car was hit, I didn't know where to start. This service handled everything from the initial claim strategy to getting my car back on the road.",
-    author: "David Ross",
-    location: "Miami, FL",
+    text: "The body shop coordination alone saved me hours of stress. They handled the estimates, scheduled the repairs, and kept me updated every step of the way. Truly a lifesaver during a tough time.",
+    author: "Brian Nguyen",
+    location: "Portland, OR",
     rating: 5,
-    initials: "DR",
+    initials: "BN",
     color: "bg-accent-500 text-white"
   }
 ];
@@ -44,7 +44,7 @@ const Testimonials: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <Reveal className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-brand-900 mb-4">Expert Claims Support. Real Success.</h2>
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-brand-900 mb-4">Real Stories. Real Recoveries.</h2>
           <p className="text-slate-600 max-w-2xl mx-auto">Join thousands of Allstate policyholders who have received expert accident support.</p>
         </Reveal>
 
