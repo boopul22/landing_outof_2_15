@@ -2,7 +2,6 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import InsuranceChat from './components/InsuranceChat';
 import Home from './pages/Home';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
@@ -23,7 +22,6 @@ const App: React.FC = () => {
         </Routes>
       </main>
       <Footer />
-      <InsuranceChat />
     </div>
   );
 };
